@@ -4,7 +4,7 @@ def stock_picker(stock_prices)
 
     #getting the days buying and selling
     def days_of_exchange(days)
-        index = days.each_with_index.to_A
+        index = days.each_with_index.to_a
         answer = []
         index.dup.map do |buy|
             temp = []
@@ -17,5 +17,5 @@ def stock_picker(stock_prices)
         end
     end
 
-    
+
 end
