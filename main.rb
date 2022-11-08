@@ -17,5 +17,13 @@ def stock_picker(stock_prices)
         end
     end
 
+    #getting the returns from the exchange
+    def stock_returns(values)
+        values.dup.map do |buy|
+            result = values.map { |sell| sell - buy }
+            values.shift
+            result
+        end
+    end
 
 end
